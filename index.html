@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>www.isrsystems.co</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+      color: white;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 40vh;
+      background: url('images/pexels-field-engineer-147254-442150.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+      
+    }
+    .hero-content h1 {
+      font-size: 40px;
+      font-weight: 800;
+      color: white;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content p {
+      color: white;
+      margin-top: 10px;
+      font-size: 30px;
+        position: relative;
+      z-index: 2;
+    }
+    
+
+    .hero-content a {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 25px;
+      background: #38B6FF;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      position: relative;
+      z-index: 2;
+     
+    
+    }
+
+    /* About Section */
+    .about {
+      width: 100%;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .about-text h2 {
+      color: #38B6FF;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .about-text ul li {
+      margin-bottom: 10px;
+      list-style: none;
+    }
+
+    .about-text ul li::before {
+      content: '✔';
+      color: #2ecc71;
+      margin-right: 8px;
+    }
+
+    .about-img img {
+      width: 100%;
+      max-width: 750px;
+      border-radius: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 30px;
+      }
+      .hero-content p {
+        font-size: 14px;
+      }
+      header nav a {
+        font-size: 13px;
+        margin-left: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2><img src="images/PROFILE/ISR.png" height="150px" width="150px" alt=""></h2>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">BRONCHURES</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>WELCOME TO ISR SYSTEMS LTD</h1>
+      <p></p>
+      <a href="#">LET US WORK WITH YOU</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <h2>ABOUT US</h2>
+      <p>ISR Systems Ltd is a comprehensive ICT solutions provider serving small businesses (SMEs), large companies, and organizations of all sizes.
+         Our team consists of certified and highly skilled professionals 
+        dedicated to building seamless, resilient ICT infrastructures that minimize downtime and protect businesses from cyber threats.
+
+        </p>
+      <ul>
+        <li>Trust & Confidence</li>
+        <li>Innovation</li>
+        <li>Excellence</li>
+        <li>Teamwork</li>
+        <li>Transparency</li>
+        <li>Motivation</li>
+        <li>Collective leadership</li>
+        <li>Responsibility</li>
+        <li>Professionalism & Ethics</li>
+        <li>Adding value to client needs</li>
+
+      </ul>
+    </div>
+
+    <div class="about-img">
+      <img src="images/pexels-field-engineer-147254-442150.jpg" alt="Worker image" />
+    </div>
+  </section>
+
+  <!-- Flyers Download Section -->
+  <section class="flyers" style="padding:60px 20px; text-align:center; background:#f7f7f7;">
+    <h2 style="color:#38B6FF; margin-bottom:20px;">Download Our Flyers</h2>
+    <p style="max-width:600px; margin:0 auto 30px;">Click on any flyer below to download it instantly to your device.</p>
+
+    <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px;">
+     
+      <a href="FLYER/1.png" download>
+        <img src="FLYER/1.png" alt="Flyer 1" style="width:300px; border-radius:8px; cursor:pointer; height: 400px;">
+      </a>
+      <a href="FLYER/2.png" download>
+        <img src="FLYER/2.png" alt="Flyer 2" style="width:300px; border-radius:8px; cursor:pointer;  height: 400px;">
+      </a>
+
+       <a href="FLYER/3.png" download>
+        <img src="FLYER/3.png" alt="Flyer 3" style="width:300px; border-radius:8px; cursor:pointer;  height: 400px;">
+      </a>
+
+      <a href="FLYER/4.jpg" download>
+        <img src="FLYER/4.jpg" alt="Flyer 4" style="width:250px; border-radius:8px; cursor:pointer;  height: 400px;">
+      </a>
+
+      <a href="FLYER/5.png" download>
+        <img src="FLYER/5.png" alt="Flyer 5" style="width:350px; border-radius:8px; cursor:pointer;  height: 400px;">
+      </a>
+
+        <a href="FLYER/6.png" download>
+        <img src="FLYER/6.png" alt="Flyer 6" style="width:350px; border-radius:8px; cursor:pointer;  height: 400px;">
+      </a>
+
+    </div>
+  </section>
+
+</body>
+</html>
+<script>
+  // ka javascript kakumapeto //
